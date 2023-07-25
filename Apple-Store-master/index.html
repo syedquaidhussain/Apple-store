@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <title>Website AirPods</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Raleway:wght@100&family=Victor+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="l-header" id="header">
+      <nav class="nav bd-grid">
+        <img
+          src="/assets/img/logo.png"
+          alt="fail to load logo"
+          id="logo-image"
+        />
+        <a href="/index.html" class="nav__logo" id="nav-logo">AirPods</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list" style="font-weight: bold">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Description</a>
+            </li>
+            <li class="nav__item">
+              <a href="#l-section" class="nav__link">Especification</a>
+            </li>
+            <li id="about" class="nav__item">
+              <a href="/about.html" class="nav__link">About Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__actions">
+          <div class="nav__toggle" id="nav-toggle">
+            <img src="assets/icons/bx-chevron-down.svg" alt="" />
+          </div>
+          <button class="nav__btn">Login</button>
+        </div>
+
+        <label style="margin: 10%">
+          <input class="toggle-checkbox" type="checkbox" id="dark-mode" />
+          <div
+            class="toggle-slot"
+            style="
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            "
+          >
+            <div class="sun-icon-wrapper">
+              <div
+                class="iconify sun-icon"
+                data-icon="feather-sun"
+                data-inline="false"
+              ></div>
+            </div>
+            <div class="toggle-button"></div>
+            <div class="moon-icon-wrapper">
+              <div
+                class="iconify moon-icon"
+                data-icon="feather-moon"
+                data-inline="false"
+              ></div>
+            </div>
+          </div>
+        </label>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <main class="l-main bd-grid">
+      <section class="home">
+        <div class="home__data">
+          <h1 class="home__title">AirPods</h1>
+          <p class="home__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            odit obcaecati iste expedita, itaque porro officia mollitia nam
+            omnis? Reprehenderit consectetur vero facere dolorem odio ad, saepe
+            cupiditate culpa adipisci?
+          </p>
+        </div>
+
+        <div class="home__img">
+          <!-- IMG -->
+          <img src="assets/img/airpod1.png" alt="" class="airpod1" />
+          <img src="assets/img/airpod2.png" alt="" class="airpod2" />
+        </div>
+
+        <div class="home__scroll">
+          <span class="home__scroll-text">Scroll down for more</span>
+          <a href="#l-section"
+            ><img
+              src="assets/icons/bx-mouse.svg"
+              alt=""
+              class="home__scroll-icon"
+          /></a>
+        </div>
+      </section>
+
+      <!-- DETAILS AIRPODS -->
+      <section class="l-section" id="l-section">
+        <div class="details">
+          <div class="details__content">
+            <div class="details__box">
+              <span class="details__initial">Lorem ipsum dolor sit.</span>
+              <h3 class="details__title">24<span> h</span></h3>
+              <p class="details__description">
+                Lorem ipsum dolor <br />sit amet consectetur
+              </p>
+            </div>
+            <div class="details__box">
+              <span class="details__initial">Hasta</span>
+              <h3 class="details__title">5<span> h</span></h3>
+              <p class="details__description">
+                de batería con<br />
+                una sola carga
+              </p>
+            </div>
+            <div class="details__box">
+              <span class="details__initial">Sólo</span>
+              <h3 class="details__title">15<span> min</span></h3>
+              <p class="details__description">
+                de carga equivalen<br />
+                a hasta 3 horas de<br />
+                audio
+              </p>
+            </div>
+          </div>
+
+          <div class="details__img">
+            <img src="assets/img/airpods.png" alt="" class="airpods" />
+          </div>
+        </div>
+      </section>
+
+      <section class="home">
+        <div class="home__data">
+          <h1 class="home__title" id="iphone">Iphones</h1>
+          <p class="home__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            odit obcaecati iste expedita, itaque porro officia mollitia nam
+            omnis? Reprehenderit consectetur vero facere dolorem odio ad, saepe
+            cupiditate culpa adipisci?
+          </p>
+        </div>
+
+        <div class="details__img" style="margin: auto">
+          <img
+            src="assets/img/Apple-iphone-13-PNG.png"
+            alt=""
+            class="airpods"
+          />
+        </div>
+
+        <!-- <div class="home__scroll">
+            <span class="home__scroll-text">Scroll down for more</span>
+            <a href="#l-section"><img src="assets/icons/bx-mouse.svg" alt="" class="home__scroll-icon"></a>
+        </div> -->
+      </section>
+    </main>
+
+    <div class="card" id="login-modal">
+      <h1>Login</h1>
+      <form action="/" method="POST">
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="password" />
+        <div id="buttons">
+          <div style="display: flex">
+            <input type="submit" value="Login" id="login-btn" />
+            <input type="submit" value="Sign Up" id="signup-btn" />
+          </div>
+          <input type="submit" value="Forget Password" id="forget-btn" />
+        </div>
+      </form>
+    </div>
+
+    <div id="container">
+      <div class="infocard">
+        <img src="/assets/img/logo.png" alt="" />
+        <p class="heading">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, a.
+        </p>
+      </div>
+
+      <div class="infocard">
+        <img src="/assets/img/logo.png" alt="" />
+        <p class="heading">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, a.
+        </p>
+      </div>
+      <div class="infocard">
+        <img src="/assets/img/logo.png" alt="" />
+        <p class="heading">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, a.
+        </p>
+      </div>
+      <div class="infocard">
+        <img src="/assets/img/logo.png" alt="" />
+        <p class="heading">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, a.
+        </p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social_icon">
+        <li>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Team</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <p>2023 Company Name | All Rights Reserved</p>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <!-- TIMELINE MAX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+
+    <!-- SCROLLMAGIC -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+
+    <!-- MAIN -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
+
+    <!-- footer icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
